@@ -1,4 +1,4 @@
-### **Descubra os Atletas Brasileiros Mais Incríveis!** 
+### **Descubra os Atletas Brasileiros Mais Incríveis! - Imersao Dev com Google Gemini** 
 
 **O que essa aplicação faz?**
 
