@@ -1,5 +1,3 @@
-## **README.md Descontraído para sua Aplicação**
-
 ### **Descubra os Atletas Brasileiros Mais Incríveis!** 
 
 **O que essa aplicação faz?**
