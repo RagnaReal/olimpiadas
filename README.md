@@ -1,4 +1,4 @@
-### **Descubra os Atletas Brasileiros Mais Incríveis! - Imersao Dev com Google Gemini** 
+### **Descubra os Atletas Brasileiros Medalistas de 2024!** 
 
 **O que essa aplicação faz?**
 
