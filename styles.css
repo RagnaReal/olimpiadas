@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
+    background: linear-gradient(135deg, #B3D4A0, #FFEB99); /* Gradiente com verde pastel e amarelo pastel */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -76,6 +76,17 @@ section button:hover {
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: flex; /* Usa Flexbox para layout */
+}   
+.imagem-atleta {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Borda arredondada */
+    margin-right: 1rem; /* Espaçamento à direita */
+}
+
+.info-resultado {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço restante */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -103,14 +114,15 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    background: linear-gradient(135deg, #B3D4A0, #FFEB99); /* Gradiente com verde pastel e amarelo pastel */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    padding: 10px 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+    border-top: 1px solid #ccc; /* Linha sutil na parte superior para destaque */
 }
 
 @media (max-width: 768px) {

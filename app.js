@@ -3,41 +3,40 @@ function pesquisar() {
 
     let campoPesquisa = document.getElementById("campo-pesquisa").value;
     if(campoPesquisa == ""){
-        section.innerHTML = "<p>Nada foi encontrado. Favor informar o nome do atleta ou esporte.</p>"
-        return
+        section.innerHTML = "<p>Nada foi encontrado. Favor informar o nome do atleta ou esporte.</p>";
+        return;
     }
 
     campoPesquisa = campoPesquisa.toLowerCase();
 
     let resultados = "";
-    let titulo = "";
-    let descricao= "";
-    let tags = "";
-    
 
     for (let dado of dados) {
-        titulo = dado.titulo.toLowerCase()
-        descricao = dado.descricao.toLowerCase()
-        descricao = dado.tags.toLowerCase()
+        let titulo = dado.titulo.toLowerCase();
+        let descricao = dado.descricao.toLowerCase();
+        let tags = dado.tags.toLowerCase();
 
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
-
             resultados += `
             <div class="item-resultado">
-                <h2>
-                 <a href="#" target="_blank">${dado.titulo}</a>
-                </h2>
-                <p class="descricao-meta">${dado.descricao}</p>    
-                <a href="${dado.link}" target="_blank">Mais informações</a>
+                <img src="${dado.imagem}" alt="${dado.titulo}" class="imagem-atleta">
+                <div>
+                <h2>${dado.titulo}</h2>
+                
+                <div>
+                <p class="descricao-meta">${dado.descricao}</p>
+                </div>
+                <div>
+                <a href="${dado.link}" target="_blank" class="link-mais-informacoes">Mais informações</a>
+                </div>
             </div>
-        `
-            }
+            `;
         }
+    }
 
-        if(!resultados){
-            resultados = "<p>Nada foi encontrado.</p>"
+    if (!resultados) {
+        resultados = "<p>Nada foi encontrado.</p>";
+    }
 
-        }
- 
-    section.innerHTML = resultados
+    section.innerHTML = resultados;
 }
